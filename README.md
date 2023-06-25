@@ -1,6 +1,6 @@
 # sf-jwt-app
 
-![JWT.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5541df6c-d31a-4800-8b2c-9cde48f172f4/JWT.png)
+<img src="https://drive.google.com/file/d/1oh4rAZKTo_q-rBgBZQW3B1wxmWhuWigu/view?usp=drive_link" alt="Alt text" title="JWT Logo">
 
 ## Overview
 
