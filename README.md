@@ -1,7 +1,5 @@
 # sf-jwt-app
 
-<img src="https://drive.google.com/file/d/1oh4rAZKTo_q-rBgBZQW3B1wxmWhuWigu/" alt="JWT Logo" title="JWT Logo">
-
 ## Overview
 
 Salesforce provides several methods to Authenticate against it’s various API’s. A common method used for Server to Server integration is the [OAuth 2.0 JWT Bearer Flow](https://help.salesforce.com/s/articleView?id=sf.remoteaccess_oauth_jwt_flow.htm&type=5). This article provides detailed steps to build this flow in Python3. Of note, while this article provides complete details on how to build and execute this Authentication Flow, I don’t get into actually using an API beyond a simple test to ensure our token and connection work.
