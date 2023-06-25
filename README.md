@@ -1,6 +1,6 @@
 # sf-jwt-app
 
-<img src="https://drive.google.com/file/d/1oh4rAZKTo_q-rBgBZQW3B1wxmWhuWigu/view?usp=drive_link" alt="Alt text" title="JWT Logo">
+<img src="https://drive.google.com/file/d/1oh4rAZKTo_q-rBgBZQW3B1wxmWhuWigu/" alt="JWT Logo" title="JWT Logo">
 
 ## Overview
 
