@@ -1,5 +1,7 @@
 # sf-jwt-app
 
+![JWT Logo](/readme_images/JWT.png "JWT Logo")
+
 ## Overview
 
 Salesforce provides several methods to Authenticate against it’s various API’s. A common method used for Server to Server integration is the [OAuth 2.0 JWT Bearer Flow](https://help.salesforce.com/s/articleView?id=sf.remoteaccess_oauth_jwt_flow.htm&type=5). This article provides detailed steps to build this flow in Python3. Of note, while this article provides complete details on how to build and execute this Authentication Flow, I don’t get into actually using an API beyond a simple test to ensure our token and connection work.
@@ -120,7 +122,7 @@ Salesforce provides several methods to Authenticate against it’s various API�
 4. Choose the latest version of Python3 installed
 5. Open a new Terminal and verify you are in the virtual environment
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/fb4bc525-f774-4431-ad93-2f9f2824e962/Untitled.png)
+![Screenshot 1](/readme_images/ss1.png "Screenshot 1")
 
 ### Create a File and Populate our Environment Variables
 
@@ -256,7 +258,7 @@ Salesforce provides several methods to Authenticate against it’s various API�
 1. Right click on app.py and click **Run Python File in Terminal**
 2. If everything worked correctly, you should see something that looks like this in the open Terminal window:
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/34a60ff4-c3ef-4a12-916f-2ed1596fe3b8/Untitled.png)
+![Screenshot 2](/readme_images/ss2.png "Screenshot 2")
 
 ## Next Steps
 
@@ -269,4 +271,3 @@ Salesforce provides several methods to Authenticate against it’s various API�
 1. [Create a Private key and Self-Signed Digital Certificate](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_auth_key_and_cert.htm)
 2. [OAuth 2.0 JWT Bearer Flow](https://help.salesforce.com/s/articleView?id=sf.remoteaccess_oauth_jwt_flow.htm&type=5)
 3. [Why do we need the JSON Web Token (JWT) in the modern web?](https://medium.com/swlh/why-do-we-need-the-json-web-token-jwt-in-the-modern-web-8490a7284482)
-4. GitHub repository containing the project files
