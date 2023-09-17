@@ -1,7 +1,7 @@
 # sf-jwt-app
 
 <!--- Images = 1 -->
-![JWT.png](/1/JWT.png)
+![JWT](https://github.com/shawthorne/sf-jwt-app/assets/2444943/81557f78-30c6-4f7a-9221-735665cd87e8)
 
 ## Overview
 
@@ -121,7 +121,7 @@ Salesforce provides several methods to Authenticate against itâ€™s various APIâ€
 4. Choose the latest version of Python3 installed
 5. Open a new Terminal and verify you are in the virtual environment
 
-![Screenshot 1](/1/1.png)
+<img width="724" alt="1" src="https://github.com/shawthorne/sf-jwt-app/assets/2444943/517f0411-9bc6-4dd1-a48c-82c599553730">
 
 ### Create a File and Populate our Environment Variables
 
@@ -256,7 +256,7 @@ pip3 install python-dotenv, pyjwt, requests, cryptography
 1. Right click on app.py and click **Run Python File in Terminal**
 2. If everything worked correctly, you should see something that looks like this in the open Terminal window:
 
-![Screenshot 2](/1/2.png)
+<img width="506" alt="2" src="https://github.com/shawthorne/sf-jwt-app/assets/2444943/a36ae964-9ab6-4d92-8df8-1f008f214b0b">
 
 ## Next Steps
 
