@@ -1,6 +1,7 @@
 # sf-jwt-app
 
-![JWT Logo](/readme_images/JWT.png "JWT Logo")
+<!--- Images = 1 -->
+![JWT.png](/1/JWT.png)
 
 ## Overview
 
@@ -65,12 +66,12 @@ Salesforce provides several methods to Authenticate against itâ€™s various APIâ€
     4. Under Field Permissions, check Read Access for all fields
     5. Save the changes
 3. Create a User
-    1. Setup\Users
+    1. Setup\\Users
     2. New User
     3. First Name = API
     4. Last Name = User
     5. Email = your email
-    6. Username = Something unique, like api.user@test.not
+    6. Username = Something unique, like `api.user@test.not`
     7. User License = Salesforce Integration
     8. Profile = Service API User
     9. Active = checked
@@ -81,13 +82,13 @@ Salesforce provides several methods to Authenticate against itâ€™s various APIâ€
 
 ### Create a Connected App in Salesforce
 
-1. Setup\App Manager
+1. Setup\\App Manager
 2. New Connected App
 3. Connected App Name = API Test
 4. API Name = API_Test
 5. Contact Email = your email
 6. Enable OAuth Settings = checked
-7. Callback URL = [https://localhost](https://localhost/)
+7. Callback URL = `https://localhost`
 8. Use digital signatures
     1. Choose File
     2. Select server.crt from earlier step
@@ -106,13 +107,11 @@ Salesforce provides several methods to Authenticate against itâ€™s various APIâ€
 ### Create a new Directory and Populate with Core Files
 
 1. Create a new Directory (wherever you choose) named sf-jwt-app
-2. Change to the new directory
-3. Create a file for our app
-    1. touch app.py
-4. Create a new directory for our certificate - mkdir certs
-5. Copy the server.key file generated earlier into the certs directory
-6. Open Visual Studio Code
-    1. code .
+2. Open Visual Studio Code
+3. Open the Folder sf-jwt-app (File\\Open Folder)
+4. Create a file for our app named app.py (empty for now)
+5. Create a new directory for our certificate named certs
+6. Copy the server.key file generated earlier into the certs directory
 
 ### Create a Virtual Environment
 
@@ -122,7 +121,7 @@ Salesforce provides several methods to Authenticate against itâ€™s various APIâ€
 4. Choose the latest version of Python3 installed
 5. Open a new Terminal and verify you are in the virtual environment
 
-![Screenshot 1](/readme_images/ss1.png "Screenshot 1")
+![Screenshot 1](/1/1.png)
 
 ### Create a File and Populate our Environment Variables
 
@@ -131,7 +130,7 @@ Salesforce provides several methods to Authenticate against itâ€™s various APIâ€
     2. Open the file in the editor
     3. Paste in this text
     
-    ```
+    ```Plain Text
     KeyFile = 'certs/server.key'
     
     ClientId = ''
@@ -141,25 +140,25 @@ Salesforce provides several methods to Authenticate against itâ€™s various APIâ€
     Domain = ''
     ```
     
-    1. Update the .env file with your attributes
-        1. ClientId
-            1. In Salesforce, view your API Test connected app
-            2. Click Manage Consumer Details
-            3. Copy the Consumer Key and paste after ClientId in the file (between the single quotes)
-        2. UserName
-            1. Copy the Salesforce username you created earlier and paste after UserName in the file (between the single quotes)
-        3. Domain
-            1. https://test.salesforce.com //for a Sandbox
-            2. https://login.salesforce.com //for a Production or Developer org
+2. Update the .env file with your attributes
+    1. ClientId
+        1. In Salesforce, view your API Test connected app
+        2. Click Manage Consumer Details
+        3. Copy the Consumer Key and paste after ClientId in the file (between the single quotes)
+    2. UserName
+        1. Copy the Salesforce username you created earlier and paste after UserName in the file (between the single quotes)
+    3. Domain
+        1. `https://test.salesforce.com` //for a Sandbox
+        2. `https://login.salesforce.com` //for a Production or Developer org
 
 ## Install Dependencies
 
 1. Open a new Terminal inside Visual Studio Code
-2. Run each of these commands one after another
-    1. pip3 install python-dotenv
-    2. pip3 install pyjwt
-    3. pip3 install requests
-    4. pip3 install cryptography
+2. Type/Paste this text
+```bash
+pip3 install python-dotenv, pyjwt, requests, cryptography
+```
+3. Press Enter
 
 ## Create our Python Files
 
@@ -250,15 +249,14 @@ Salesforce provides several methods to Authenticate against itâ€™s various APIâ€
     print('Account Id = ' + AccountId)
     print('Account Number = ' + AccountNum)
     print('Account Name = ' + AccountName)
-    ```
-    
+    ```    
 
 ## Test
 
 1. Right click on app.py and click **Run Python File in Terminal**
 2. If everything worked correctly, you should see something that looks like this in the open Terminal window:
 
-![Screenshot 2](/readme_images/ss2.png "Screenshot 2")
+![Screenshot 2](/1/2.png)
 
 ## Next Steps
 
@@ -271,3 +269,4 @@ Salesforce provides several methods to Authenticate against itâ€™s various APIâ€
 1. [Create a Private key and Self-Signed Digital Certificate](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_auth_key_and_cert.htm)
 2. [OAuth 2.0 JWT Bearer Flow](https://help.salesforce.com/s/articleView?id=sf.remoteaccess_oauth_jwt_flow.htm&type=5)
 3. [Why do we need the JSON Web Token (JWT) in the modern web?](https://medium.com/swlh/why-do-we-need-the-json-web-token-jwt-in-the-modern-web-8490a7284482)
+4. [GitHub repository containing the project files](https://github.com/shawthorne/sf-jwt-app)
